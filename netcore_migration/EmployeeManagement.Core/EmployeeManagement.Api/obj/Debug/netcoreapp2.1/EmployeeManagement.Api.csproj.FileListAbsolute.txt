@@ -1,0 +1,14 @@
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Api\bin\Debug\netcoreapp2.1\EmployeeManagement.Api.deps.json
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Api\bin\Debug\netcoreapp2.1\EmployeeManagement.Api.runtimeconfig.json
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Api\bin\Debug\netcoreapp2.1\EmployeeManagement.Api.runtimeconfig.dev.json
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Api\bin\Debug\netcoreapp2.1\EmployeeManagement.Api.dll
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Api\bin\Debug\netcoreapp2.1\EmployeeManagement.Api.pdb
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Api\obj\Debug\netcoreapp2.1\EmployeeManagement.Api.csprojAssemblyReference.cache
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Api\obj\Debug\netcoreapp2.1\EmployeeManagement.Api.csproj.CoreCompileInputs.cache
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Api\obj\Debug\netcoreapp2.1\EmployeeManagement.Api.RazorAssemblyInfo.cache
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Api\obj\Debug\netcoreapp2.1\EmployeeManagement.Api.RazorAssemblyInfo.cs
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Api\obj\Debug\netcoreapp2.1\EmployeeManagement.Api.AssemblyInfoInputs.cache
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Api\obj\Debug\netcoreapp2.1\EmployeeManagement.Api.AssemblyInfo.cs
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Api\obj\Debug\netcoreapp2.1\EmployeeManagement.Api.RazorTargetAssemblyInfo.cache
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Api\obj\Debug\netcoreapp2.1\EmployeeManagement.Api.dll
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Api\obj\Debug\netcoreapp2.1\EmployeeManagement.Api.pdb
