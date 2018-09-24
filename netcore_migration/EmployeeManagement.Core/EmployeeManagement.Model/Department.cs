@@ -14,7 +14,7 @@ namespace EmployeeManagement.Model
         /// Department Id
         /// </summary>
         [JsonProperty(PropertyName = "id")]
-        public int DepartmentId { get; set; }
+        public string DepartmentId { get; set; }
 
         /// <summary>
         /// Department Name

@@ -13,7 +13,13 @@ namespace EmployeeManagement.Model
         /// Employee Id
         /// </summary>
         [JsonProperty(PropertyName = "id")]
-        public int EmployeeId { get; set; }
+        public string EmployeeId { get; set; }
+
+        /// <summary>
+        /// Role
+        /// </summary>
+        [JsonProperty(PropertyName = "role")]
+        public string Role { get; set; }
 
         /// <summary>
         /// First Name
@@ -42,14 +48,15 @@ namespace EmployeeManagement.Model
         /// <summary>
         /// Project Id
         /// </summary>
-        [JsonProperty(PropertyName = "projectid")]
-        public Project ProjectId { get; set; }
+        [JsonProperty(PropertyName = "project")]
+        public Project Project { get; set; }
 
         /// <summary>
         /// Skill Sets
         /// </summary>
         [JsonProperty(PropertyName ="skillsets")]
         public List<Skills> SkillSets { get; set; }
+
         /// <summary>
         /// Billable
         /// </summary>

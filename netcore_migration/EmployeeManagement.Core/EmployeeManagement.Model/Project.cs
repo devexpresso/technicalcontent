@@ -11,7 +11,7 @@ namespace EmployeeManagement.Model
         /// Project Id
         /// </summary>
         [JsonProperty(PropertyName = "id")]
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         /// <summary>
         /// Project Name
@@ -29,6 +29,6 @@ namespace EmployeeManagement.Model
         /// Client
         /// </summary>
         [JsonProperty(PropertyName = "clientid")]
-        public Client ClientId { get; set; }
+        public Client Client { get; set; }
     }
 }

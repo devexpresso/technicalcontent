@@ -20,7 +20,7 @@ namespace EmployeeManagement.Provider.Provider
 
         public async Task<Document> Delete(int id)
         {
-            var result = await DocumentDBRepository<Project>.DeleteItemAsync(id);
+            var result = await DocumentDBRepository<Project>.DeleteItemAsync(id.ToString());
             return result;
         }
 
@@ -38,7 +38,7 @@ namespace EmployeeManagement.Provider.Provider
 
         public async Task<IEnumerable<Project>> GetSpecificById(int id)
         {
-            var result = await DocumentDBRepository<Project>.GetItemsAsync(d => d.Id == id);
+            var result = await DocumentDBRepository<Project>.GetItemsAsync(d => d.Id == id.ToString());
             return result;
         }
 

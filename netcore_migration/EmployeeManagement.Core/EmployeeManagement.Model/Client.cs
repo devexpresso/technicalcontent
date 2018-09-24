@@ -14,7 +14,7 @@ namespace EmployeeManagement.Model
         /// Client id
         /// </summary>
         [JsonProperty(PropertyName ="id")]
-        public int ClientId { get; set; }
+        public string ClientId { get; set; }
         /// <summary>
         /// Client name
         /// </summary>

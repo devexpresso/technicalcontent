@@ -15,7 +15,7 @@ namespace EmployeeManagement.Model
         /// Skill Id
         /// </summary>
         [JsonProperty(PropertyName = "id")]
-        public int SkillId { get; set; }
+        public string SkillId { get; set; }
 
         /// <summary>
         /// Skill Name

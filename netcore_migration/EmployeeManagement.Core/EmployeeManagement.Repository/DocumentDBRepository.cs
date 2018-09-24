@@ -18,10 +18,15 @@ namespace EmployeeManagement.Repository
     public static class DocumentDBRepository<T> where T : class
     {
         private static string DatabaseId;
-        private static string CollectionId;
+        //private static string CollectionId;
         private static IConfiguration Configuration;
         private static DocumentClient client;
-    
+
+        static DocumentDBRepository()
+        {
+            Initialize();
+        }
+
         /// <summary>
         /// 
         /// </summary>
@@ -30,7 +35,7 @@ namespace EmployeeManagement.Repository
             Configuration = ConfigurationResolver.Configuration();
 
             DatabaseId = Configuration.GetSection("AppSettings").GetSection("database").Value;
-            CollectionId = Configuration.GetSection("AppSettings").GetSection("collection").Value;
+            //CollectionId = Configuration.GetSection("AppSettings").GetSection("collection").Value;
 
             client = new DocumentClient(new Uri(Configuration.GetSection("AppSettings").GetSection("endpoint").Value), Configuration.GetSection("AppSettings").GetSection("authKey").Value);
             CreateDatabaseIfNotExistsAsync().Wait();
@@ -43,12 +48,12 @@ namespace EmployeeManagement.Repository
         /// <param name="id"></param>
         /// <param name="category"></param>
         /// <returns></returns>
-        public static async Task<T> GetItemAsync(int id, string category)
+        public static async Task<T> GetItemAsync(string id, string category)
         {
             try
             {
                 Document document =
-                    await client.ReadDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, CollectionId, Convert.ToString(id)));
+                    await client.ReadDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, typeof(T).Name, id));
                 return (T)(dynamic)document;
             }
             catch (DocumentClientException e)
@@ -71,7 +76,7 @@ namespace EmployeeManagement.Repository
         public static async Task<IEnumerable<T>> GetItemsAsync(Expression<Func<T, bool>> predicate)
         {
             IDocumentQuery<T> query = client.CreateDocumentQuery<T>(
-                UriFactory.CreateDocumentCollectionUri(DatabaseId, CollectionId),
+                UriFactory.CreateDocumentCollectionUri(DatabaseId, typeof(T).Name),
                 new FeedOptions { MaxItemCount = -1, EnableCrossPartitionQuery = true })
                 .Where(predicate)
                 .AsDocumentQuery();
@@ -91,7 +96,7 @@ namespace EmployeeManagement.Repository
         public static async Task<IEnumerable<T>> GetItemsAsync()
         {
             IDocumentQuery<T> query = client.CreateDocumentQuery<T>(
-                UriFactory.CreateDocumentCollectionUri(DatabaseId, CollectionId),
+                UriFactory.CreateDocumentCollectionUri(DatabaseId, typeof(T).Name),
                 new FeedOptions { MaxItemCount = -1, EnableCrossPartitionQuery = true })
                 .AsDocumentQuery();
 
@@ -110,7 +115,7 @@ namespace EmployeeManagement.Repository
         /// <returns></returns>
         public static async Task<Document> CreateItemAsync(T item)
         {
-            return await client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri(DatabaseId, CollectionId), item);
+            return await client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri(DatabaseId, typeof(T).Name), item);
         }
         /// <summary>
         /// 
@@ -118,18 +123,18 @@ namespace EmployeeManagement.Repository
         /// <param name="id"></param>
         /// <param name="item"></param>
         /// <returns></returns>
-        public static async Task<Document> UpdateItemAsync(int id, T item)
+        public static async Task<Document> UpdateItemAsync(string id, T item)
         {
-            return await client.ReplaceDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, CollectionId, Convert.ToString(id)), item);
+            return await client.ReplaceDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, typeof(T).Name, id), item);
         }
         /// <summary>
         /// 
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public static async Task<Document> DeleteItemAsync(int id)
+        public static async Task<Document> DeleteItemAsync(string id)
         {
-            return await client.DeleteDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, CollectionId, Convert.ToString(id)));
+            return await client.DeleteDocumentAsync(UriFactory.CreateDocumentUri(DatabaseId, typeof(T).Name, id));
         }
 
 
@@ -156,7 +161,7 @@ namespace EmployeeManagement.Repository
         {
             try
             {
-                await client.ReadDocumentCollectionAsync(UriFactory.CreateDocumentCollectionUri(DatabaseId, CollectionId));
+                await client.ReadDocumentCollectionAsync(UriFactory.CreateDocumentCollectionUri(DatabaseId, typeof(T).Name));
             }
             catch (DocumentClientException e)
             {
@@ -166,7 +171,7 @@ namespace EmployeeManagement.Repository
                         UriFactory.CreateDatabaseUri(DatabaseId),
                         new DocumentCollection
                         {
-                            Id = CollectionId
+                            Id = typeof(T).Name
                         },
                         new RequestOptions { OfferThroughput = 400 });
                 }
