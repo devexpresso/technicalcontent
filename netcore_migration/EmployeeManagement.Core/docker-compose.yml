@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  employeemanagement.api:
+    image: ${DOCKER_REGISTRY}employeemanagementapi
+    build:
+      context: .
+      dockerfile: EmployeeManagement.Api\Dockerfile

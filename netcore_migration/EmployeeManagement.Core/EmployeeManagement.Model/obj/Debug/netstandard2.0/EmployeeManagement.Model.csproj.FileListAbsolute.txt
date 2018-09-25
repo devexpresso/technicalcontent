@@ -1,9 +1,8 @@
 C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Model\bin\Debug\netstandard2.0\EmployeeManagement.Model.deps.json
 C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Model\bin\Debug\netstandard2.0\EmployeeManagement.Model.dll
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Model\bin\Debug\netstandard2.0\EmployeeManagement.Model.pdb
 C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Model\obj\Debug\netstandard2.0\EmployeeManagement.Model.csproj.CoreCompileInputs.cache
 C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Model\obj\Debug\netstandard2.0\EmployeeManagement.Model.AssemblyInfoInputs.cache
 C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Model\obj\Debug\netstandard2.0\EmployeeManagement.Model.AssemblyInfo.cs
-C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Model\bin\Debug\netstandard2.0\EmployeeManagement.Model.pdb
 C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Model\obj\Debug\netstandard2.0\EmployeeManagement.Model.dll
 C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Model\obj\Debug\netstandard2.0\EmployeeManagement.Model.pdb
-C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Model\obj\Debug\netstandard2.0\EmployeeManagement.Model.csprojAssemblyReference.cache

@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EmployeeManagement.Api</name>
+    </assembly>
+    <members>
+        <member name="T:EmployeeManagement.Api.Controllers.ClientController">
+            <summary>
+            Client
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.ClientController.#ctor(EmployeeManagement.Provider.Interface.IConfigurationProvider{EmployeeManagement.Model.Client},MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="provider"></param>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.ClientController.GetAllClients">
+            <summary>
+            Get All Clients
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.ClientController.GetClientById(System.Int32)">
+            <summary>
+            Get a Client by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.ClientController.AddCient(EmployeeManagement.Api.Command.Client.AddClientCommand)">
+            <summary>
+            Add a Client
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.ClientController.UpdateClient(EmployeeManagement.Api.Command.Client.ModifyClientCommand)">
+            <summary>
+            Update a client
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.ClientController.DeleteClient(System.Int32)">
+            <summary>
+            Delete a Client
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EmployeeManagement.Api.Controllers.DepartmentController">
+            <summary>
+            Department
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.DepartmentController.#ctor(EmployeeManagement.Provider.Interface.IConfigurationProvider{EmployeeManagement.Model.Department},MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="provider"></param>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.DepartmentController.GetAllDepartments">
+            <summary>
+            Get All Departments
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.DepartmentController.GetDepartmentById(System.Int32)">
+            <summary>
+            Get a Department by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.DepartmentController.AddDepartment(EmployeeManagement.Api.Command.Department.AddDepartmentCommand)">
+            <summary>
+            Add a Department
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.DepartmentController.UpdateDepartment(EmployeeManagement.Api.Command.Department.ModifyDepartmentCommand)">
+            <summary>
+            Update a Department
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.DepartmentController.DeleteDepartment(System.Int32)">
+            <summary>
+            Delete a Department
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EmployeeManagement.Api.Controllers.EmployeeController">
+            <summary>
+            Employee 
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.EmployeeController.#ctor(EmployeeManagement.Provider.Interface.IConfigurationProvider{EmployeeManagement.Model.Employee},MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="provider"></param>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.EmployeeController.GetAllEmployees">
+            <summary>
+            Get All Employees
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.EmployeeController.GetAllBillableEmployees">
+            <summary>
+            Get all Billable employees
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.EmployeeController.GetEmployeeById(System.Int32)">
+            <summary>
+            Get an employee by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.EmployeeController.AddEmployee(EmployeeManagement.Api.Command.Employee.AddEmployeeCommand)">
+            <summary>
+            Add an employee
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.EmployeeController.UpdateEmployee(EmployeeManagement.Api.Command.Employee.ModifyEmployeeCommand)">
+            <summary>
+            Update an employee
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.EmployeeController.DeleteEmployee(System.Int32)">
+            <summary>
+            Delete an employee
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EmployeeManagement.Api.Controllers.ProjectController">
+            <summary>
+            Project
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.ProjectController.#ctor(EmployeeManagement.Provider.Interface.IConfigurationProvider{EmployeeManagement.Model.Project},MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="provider"></param>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.ProjectController.GetAllProjects">
+            <summary>
+            Get All Projects
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.ProjectController.GetProjectById(System.Int32)">
+            <summary>
+            Get a Project by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.ProjectController.AddProject(EmployeeManagement.Api.Command.Project.AddProjectCommand)">
+            <summary>
+            Add a Project
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.ProjectController.UpdateProject(EmployeeManagement.Api.Command.Project.ModifyProjectCommand)">
+            <summary>
+            Update a project
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.ProjectController.DeleteProject(System.Int32)">
+            <summary>
+            Delete a project
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EmployeeManagement.Api.Controllers.SkillController">
+            <summary>
+            Skills
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.SkillController.#ctor(EmployeeManagement.Provider.Interface.IConfigurationProvider{EmployeeManagement.Model.Skills},MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="provider"></param>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.SkillController.GetAllSkills">
+            <summary>
+            Get All Skills
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.SkillController.GetSkillById(System.Int32)">
+            <summary>
+            Get a Skill by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.SkillController.AddSkill(EmployeeManagement.Api.Command.Skill.AddSkillCommand)">
+            <summary>
+            Add a Skill
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.SkillController.UpdateSkill(EmployeeManagement.Api.Command.Skill.ModifySkillCommand)">
+            <summary>
+            Update a Skill
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EmployeeManagement.Api.Controllers.SkillController.DeleteSkill(System.Int32)">
+            <summary>
+            Delete a Skill
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EmployeeManagement.Api.Handler.Client.AddClient">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:EmployeeManagement.Api.Handler.Client.DeleteClient">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:EmployeeManagement.Api.Handler.Department.AddDepartment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:EmployeeManagement.Api.Handler.Department.DeleteDepartment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:EmployeeManagement.Api.Handler.Employee.AddEmployee">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:EmployeeManagement.Api.Handler.Employee.DeleteEmployee">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:EmployeeManagement.Api.Handler.Project.AddProject">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:EmployeeManagement.Api.Handler.Project.DeleteProject">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:EmployeeManagement.Api.Handler.Skill.AddSkill">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:EmployeeManagement.Api.Handler.Skill.DeleteSkill">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:EmployeeManagement.Api.Request.Employee.AddProjectRequest">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
