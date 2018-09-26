@@ -1,0 +1,16 @@
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Provider\bin\Release\netstandard2.0\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Provider\bin\Release\netstandard2.0\DocumentDB.Spatial.Sql.dll
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Provider\bin\Release\netstandard2.0\EmployeeManagement.Provider.deps.json
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Provider\bin\Release\netstandard2.0\EmployeeManagement.Provider.dll
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Provider\bin\Release\netstandard2.0\EmployeeManagement.Provider.pdb
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Provider\bin\Release\netstandard2.0\EmployeeManagement.Model.dll
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Provider\bin\Release\netstandard2.0\EmployeeManagement.Repository.dll
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Provider\bin\Release\netstandard2.0\EmployeeManagement.Model.pdb
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Provider\bin\Release\netstandard2.0\EmployeeManagement.Repository.pdb
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Provider\obj\Release\netstandard2.0\EmployeeManagement.Provider.csprojAssemblyReference.cache
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Provider\obj\Release\netstandard2.0\EmployeeManagement.Provider.csproj.CoreCompileInputs.cache
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Provider\obj\Release\netstandard2.0\EmployeeManagement.Provider.AssemblyInfoInputs.cache
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Provider\obj\Release\netstandard2.0\EmployeeManagement.Provider.AssemblyInfo.cs
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Provider\obj\Release\netstandard2.0\EmployeeManagement.Provider.csproj.CopyComplete
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Provider\obj\Release\netstandard2.0\EmployeeManagement.Provider.dll
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\EmployeeManagement.Provider\obj\Release\netstandard2.0\EmployeeManagement.Provider.pdb
