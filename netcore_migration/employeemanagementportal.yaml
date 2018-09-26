@@ -1,0 +1,32 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: employeemanagementapi
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: employeemanagementapi
+    spec:
+      containers:
+      - name: employeemanagementapi
+        image: acrnetmigration.azurecr.io/employeemanagementapi
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: regsecret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: employeemanagementapi
+spec:
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+  selector:
+    app: employeemanagementapi
+  type: LoadBalancer
