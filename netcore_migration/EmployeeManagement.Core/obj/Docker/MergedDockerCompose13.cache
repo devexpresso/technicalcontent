@@ -1,15 +1,27 @@
-networks:
-  default:
-    external:
-      name: nat
 services:
   employeemanagement.api:
     build:
       context: C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core
-      dockerfile: EmployeeManagement.Api\Dockerfile
+      dockerfile: EmployeeManagement.Api/Dockerfile
+      target: base
+    entrypoint: tail -f /dev/null
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-    image: employeemanagementapi
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: employeemanagementapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  bin/Debug/netcoreapp2.1/EmployeeManagement.Api.dll'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/bash -c "if PID=$$(pidof
+        -x dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
     ports:
     - target: 80
+    volumes:
+    - /c/devxpresso/technicalcontent/netcore_migration/EmployeeManagement.Core/EmployeeManagement.Api:/app:rw
+    - /c/Users/joyde/vsdbg/vs2017u5:/remote_debugger:ro
+    - /c/Program Files/dotnet/sdk/NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - /c/Users/joyde/.nuget/packages:/root/.nuget/packages:ro
 version: '3.4'

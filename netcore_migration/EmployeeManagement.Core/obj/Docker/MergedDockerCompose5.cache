@@ -1,12 +1,8 @@
-networks:
-  default:
-    external:
-      name: nat
 services:
   employeemanagement.api:
     build:
       context: C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core
-      dockerfile: EmployeeManagement.Api\Dockerfile
+      dockerfile: EmployeeManagement.Api/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
     image: employeemanagementapi

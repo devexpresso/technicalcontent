@@ -5,4 +5,4 @@ services:
     image: ${DOCKER_REGISTRY}employeemanagementapi
     build:
       context: .
-      dockerfile: EmployeeManagement.Api\Dockerfile
+      dockerfile: EmployeeManagement.Api/Dockerfile
