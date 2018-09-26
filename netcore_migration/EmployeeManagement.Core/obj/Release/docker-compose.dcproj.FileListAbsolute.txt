@@ -1,0 +1,11 @@
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\bin\Release\EmployeeManagement.Api.dll
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\bin\Release\EmployeeManagement.Model.dll
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\bin\Release\EmployeeManagement.Provider.dll
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\bin\Release\EmployeeManagement.Repository.dll
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\bin\Release\EmployeeManagement.Api.pdb
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\bin\Release\EmployeeManagement.Model.pdb
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\bin\Release\EmployeeManagement.Provider.pdb
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\bin\Release\EmployeeManagement.Repository.pdb
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\obj\Release\docker-compose.dcprojAssemblyReference.cache
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\obj\Release\docker-compose.dcproj.CoreCompileInputs.cache
+C:\devxpresso\technicalcontent\netcore_migration\EmployeeManagement.Core\obj\Release\docker-compose.dcproj.CopyComplete
